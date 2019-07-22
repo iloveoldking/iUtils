@@ -67,8 +67,7 @@
       });
     </pre>
     <pre>
-      export default instance;
-    </pre>
+      export default instance;</pre>
   </div>
 </template>
 

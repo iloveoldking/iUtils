@@ -4,16 +4,21 @@
       <a-collapse-panel header="封装axios请求数据">
         <request-doc />
       </a-collapse-panel>
+      <a-collapse-panel header="将扁平数据格式转换为树状数据结构">
+        <tree-data />
+      </a-collapse-panel>
     </a-collapse>
   </div>
 </template>
 
 <script>
 import RequestDoc from "@/components/Request";
+import TreeData from "@/components/TreeData";
 export default {
   name: "home",
   components: {
-    RequestDoc
+    RequestDoc,
+    TreeData
   }
 };
 </script>
