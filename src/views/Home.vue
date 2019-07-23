@@ -4,7 +4,7 @@
       <a slot="message" href="https://github.com/iloveoldking/iUtils" target="_blank">
         <a-icon type="github" />iUtils
       </a>
-      <p slot="description">初衷是为了收集使用较多或者封装较实用的代码块，包括各前端流行框架以及node（主要是egg框架），已收录<em>23</em>项</p>
+      <p slot="description">初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录<em>23</em>项</p>
     </a-alert>
     <a-collapse>
       <!-- css -->
