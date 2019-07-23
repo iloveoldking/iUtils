@@ -1,44 +1,101 @@
 <template>
   <div class="home-wrapper">
     <a-collapse>
-      <a-collapse-panel header="封装axios请求数据">
-        <request-doc />
+      <!-- css -->
+      <a-collapse-panel header="css相关">
+        <a-collapse>
+          <a-collapse-panel header="清除浮动clearfix">
+            <clear-fix />
+          </a-collapse-panel>
+          <a-collapse-panel header="使用less继承">
+            <less-extends />
+          </a-collapse-panel>
+          <a-collapse-panel header="在css modules中覆盖组件样式">
+            <css-modules />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
-      <a-collapse-panel header="将扁平数据格式转换为树状数据结构">
-        <tree-data />
+      <!-- jquery -->
+      <a-collapse-panel header="jquery相关">
+        <a-collapse>
+          <a-collapse-panel header="封装jquery中的ajax请求和ajax上传文件">
+            <jquery-ajax />
+          </a-collapse-panel>
+          <a-collapse-panel header="form表单信息提取功能">
+            <serialize-form />
+          </a-collapse-panel>
+          <a-collapse-panel header="解析url字符串中参数的方法">
+            <search-params />
+          </a-collapse-panel>
+          <a-collapse-panel header="基于jquery封装的简版alert提示组件">
+            <jquery-alert />
+          </a-collapse-panel>
+          <a-collapse-panel header="初始化zTree插件">
+            <init-ztree />
+          </a-collapse-panel>
+          <a-collapse-panel header="bootstrapTable构建方式">
+            <bootstrap-table />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
-      <a-collapse-panel header="less报错解决方案">
-        <less-error />
+      <!-- vue -->
+      <a-collapse-panel header="vue相关">
+        <a-collapse>
+          <a-collapse-panel header="vue项目打包注意事项">
+            <vue-build />
+          </a-collapse-panel>
+          <a-collapse-panel header="less报错解决方案">
+            <less-error />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
-      <a-collapse-panel header="vue项目打包注意事项">
-        <vue-build />
+      <!-- react -->
+      <a-collapse-panel header="react相关">
+        <a-collapse>
+          <a-collapse-panel header="umi框架中connect model">
+            <umi-connect />
+          </a-collapse-panel>
+          <a-collapse-panel header="umi框架中路由拦截器">
+            <umi-router-interceptor />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
-      <a-collapse-panel header="清除浮动clearfix">
-        <clear-fix />
+      <!-- node -->
+      <a-collapse-panel header="node相关">
+        <a-collapse>
+          <a-collapse-panel header="在egg框架中使用MongoDB作为数据库">
+            <egg-mongo />
+          </a-collapse-panel>
+          <a-collapse-panel header="mongoose部分常见api介绍">
+            <egg-mongoose />
+          </a-collapse-panel>
+          <a-collapse-panel header="mongoose关联查询操作">
+            <mongoose-populate />
+          </a-collapse-panel>
+          <a-collapse-panel header="在egg框架中支持跨域请求">
+            <egg-cors />
+          </a-collapse-panel>
+          <a-collapse-panel header="node上传文件">
+            <node-upload />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
-      <a-collapse-panel header="bootstrapTable构建方式">
-        <bootstrap-table />
-      </a-collapse-panel>
-      <a-collapse-panel header="form表单信息提取功能">
-        <serialize-form />
-      </a-collapse-panel>
-      <a-collapse-panel header="封装jquery中的ajax请求和ajax上传文件">
-        <jquery-ajax />
-      </a-collapse-panel>
-      <a-collapse-panel header="基于jquery封装的简版alert提示组件">
-        <jquery-alert />
-      </a-collapse-panel>
-      <a-collapse-panel header="解析url字符串中参数的方法">
-        <search-params />
-      </a-collapse-panel>
-      <a-collapse-panel header="正则语法以及常见表达式">
-        <regular-expression />
-      </a-collapse-panel>
-      <a-collapse-panel header="初始化zTree插件">
-        <init-ztree />
-      </a-collapse-panel>
-      <a-collapse-panel header="file标签获取文件以及base64格式数据">
-        <file-read />
+      <!-- other -->
+      <a-collapse-panel header="其他">
+        <a-collapse>
+          <a-collapse-panel header="封装axios请求数据">
+            <request-doc />
+          </a-collapse-panel>
+          <a-collapse-panel header="将扁平数据格式转换为树状数据结构">
+            <tree-data />
+          </a-collapse-panel>
+          <a-collapse-panel header="正则语法以及常见表达式">
+            <regular-expression />
+          </a-collapse-panel>
+          <a-collapse-panel header="file标签获取文件以及base64格式数据">
+            <file-read />
+          </a-collapse-panel>
+        </a-collapse>
       </a-collapse-panel>
     </a-collapse>
   </div>
@@ -58,6 +115,16 @@ import SearchParams from "@/components/SearchParams";
 import RegularExpression from "@/components/RegularExpression";
 import InitZtree from "@/components/InitZtree";
 import FileRead from "@/components/FileRead";
+import UmiConnect from "@/components/UmiConnect";
+import LessExtends from "@/components/LessExtends";
+import CssModules from "@/components/CssModules";
+import UmiRouterInterceptor from "@/components/UmiRouterInterceptor";
+import EggMongo from "@/components/EggMongo";
+import EggMongoose from "@/components/EggMongoose";
+import MongoosePopulate from "@/components/MongoosePopulate";
+import NodeUpload from "@/components/NodeUpload";
+import EggCors from "@/components/EggCors";
+
 export default {
   name: "home",
   components: {
@@ -73,7 +140,16 @@ export default {
     SearchParams,
     RegularExpression,
     InitZtree,
-    FileRead
+    FileRead,
+    UmiConnect,
+    LessExtends,
+    CssModules,
+    UmiRouterInterceptor,
+    EggMongo,
+    EggMongoose,
+    MongoosePopulate,
+    NodeUpload,
+    EggCors
   }
 };
 </script>
@@ -83,15 +159,15 @@ export default {
   padding: 10px 30px;
   .ant-collapse {
     .ant-collapse-header {
-      color: #da5a5a;
+      color: #008eff;
     }
 
     .ant-collapse-content-box {
-      background: #f7fdf4;
+      background: #f7f7f7;
 
       pre {
         margin: 0;
-        font-weight: bold;
+        font-weight: 300;
       }
     }
   }
