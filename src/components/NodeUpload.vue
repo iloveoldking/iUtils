@@ -56,6 +56,6 @@
 
 <script>
 export default {
-  name: "mongoosePopulate"
+  name: "nodeUpload"
 };
 </script>

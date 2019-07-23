@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  name: "vuebuild"
+  name: "vueBuild"
 };
 </script>

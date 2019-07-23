@@ -1,5 +1,11 @@
 <template>
   <div class="home-wrapper">
+    <a-alert type="info" class="banner-tip">
+      <a slot="message" href="https://github.com/iloveoldking/iUtils" target="_blank">
+        <a-icon type="github" />iUtils
+      </a>
+      <p slot="description">初衷是为了收集使用较多或者封装较实用的代码块，包括各前端流行框架以及node（主要是egg框架），已收录<em>23</em>项</p>
+    </a-alert>
     <a-collapse>
       <!-- css -->
       <a-collapse-panel header="css相关">
@@ -46,6 +52,9 @@
           </a-collapse-panel>
           <a-collapse-panel header="less报错解决方案">
             <less-error />
+          </a-collapse-panel>
+          <a-collapse-panel header="封装vue版ckeditor富文本编辑器">
+            <vue-ckeditor />
           </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
@@ -124,6 +133,7 @@ import EggMongoose from "@/components/EggMongoose";
 import MongoosePopulate from "@/components/MongoosePopulate";
 import NodeUpload from "@/components/NodeUpload";
 import EggCors from "@/components/EggCors";
+import VueCkeditor from "@/components/VueCkeditor";
 
 export default {
   name: "home",
@@ -149,7 +159,8 @@ export default {
     EggMongoose,
     MongoosePopulate,
     NodeUpload,
-    EggCors
+    EggCors,
+    VueCkeditor
   }
 };
 </script>
@@ -157,6 +168,38 @@ export default {
 <style lang="less">
 .home-wrapper {
   padding: 10px 30px;
+
+  .banner-tip {
+    margin-bottom: 10px;
+
+    .ant-alert-message {
+      margin-bottom: 10px;
+
+      a {
+        color: rgba(0, 0, 0, 0.65);
+
+        &:hover {
+          color: #108ee9;
+        }
+
+        .anticon {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+
+      em {
+        color: #0c87df;
+        margin: 0 4px;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+    }
+  }
+
   .ant-collapse {
     .ant-collapse-header {
       color: #008eff;
