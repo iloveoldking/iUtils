@@ -233,7 +233,8 @@ export default {
 
       pre {
         margin: 0;
-        font-weight: 300;
+        font-weight: 200;
+        font-family: Consolas, MicrosoftYaHei;
       }
     }
   }
