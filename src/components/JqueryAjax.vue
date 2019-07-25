@@ -21,7 +21,7 @@
             timeout: 60 * 1000,
             success: function (response) {
               callback(response);
-            }
+            },
             complete: function (XMLHttpRequest, status) {
               if (status == 'timeout') {
                 ajax.abort();
