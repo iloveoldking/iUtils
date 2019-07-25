@@ -4,7 +4,10 @@
       <a slot="message" href="https://github.com/iloveoldking/iUtils" target="_blank">
         <a-icon type="github" />iUtils
       </a>
-      <p slot="description">初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录<em>23</em>项</p>
+      <p slot="description">
+        初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录
+        <em>27</em>项
+      </p>
     </a-alert>
     <a-collapse>
       <!-- css -->
@@ -18,6 +21,9 @@
           </a-collapse-panel>
           <a-collapse-panel header="在css modules中覆盖组件样式">
             <css-modules />
+          </a-collapse-panel>
+          <a-collapse-panel header="移动端适配px转换rem">
+            <rem-transition />
           </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
@@ -55,6 +61,9 @@
           </a-collapse-panel>
           <a-collapse-panel header="封装vue版ckeditor富文本编辑器">
             <vue-ckeditor />
+          </a-collapse-panel>
+          <a-collapse-panel header="理解$nextTick的作用">
+            <next-tick />
           </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
@@ -95,11 +104,17 @@
           <a-collapse-panel header="封装axios请求数据">
             <request-doc />
           </a-collapse-panel>
+          <a-collapse-panel header="配置服务器代理解决跨域请求问题">
+            <server-proxy />
+          </a-collapse-panel>
           <a-collapse-panel header="将扁平数据格式转换为树状数据结构">
             <tree-data />
           </a-collapse-panel>
           <a-collapse-panel header="正则语法以及常见表达式">
             <regular-expression />
+          </a-collapse-panel>
+          <a-collapse-panel header="videoJs插件使用方法">
+            <video-js />
           </a-collapse-panel>
           <a-collapse-panel header="file标签获取文件以及base64格式数据">
             <file-read />
@@ -134,6 +149,10 @@ import MongoosePopulate from "@/components/MongoosePopulate";
 import NodeUpload from "@/components/NodeUpload";
 import EggCors from "@/components/EggCors";
 import VueCkeditor from "@/components/VueCkeditor";
+import RemTransition from "@/components/RemTransition";
+import NextTick from "@/components/NextTick";
+import ServerProxy from "@/components/ServerProxy";
+import VideoJs from "@/components/VideoJs";
 
 export default {
   name: "home",
@@ -160,7 +179,11 @@ export default {
     MongoosePopulate,
     NodeUpload,
     EggCors,
-    VueCkeditor
+    VueCkeditor,
+    RemTransition,
+    NextTick,
+    ServerProxy,
+    VideoJs
   }
 };
 </script>
