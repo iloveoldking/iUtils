@@ -25,6 +25,9 @@
           <a-collapse-panel header="移动端适配px转换rem">
             <rem-transition />
           </a-collapse-panel>
+          <a-collapse-panel header="根据宽高比，高度随宽度自适应变化">
+            <auto-height />
+          </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
       <!-- jquery -->
@@ -116,6 +119,9 @@
           <a-collapse-panel header="videoJs插件使用方法">
             <video-js />
           </a-collapse-panel>
+          <a-collapse-panel header="js.cookie插件用法">
+            <js-cookie />
+          </a-collapse-panel>
           <a-collapse-panel header="file标签获取文件以及base64格式数据">
             <file-read />
           </a-collapse-panel>
@@ -153,6 +159,8 @@ import RemTransition from "@/components/RemTransition";
 import NextTick from "@/components/NextTick";
 import ServerProxy from "@/components/ServerProxy";
 import VideoJs from "@/components/VideoJs";
+import AutoHeight from "@/components/AutoHeight";
+import JsCookie from "@/components/JsCookie";
 
 export default {
   name: "home",
@@ -183,7 +191,9 @@ export default {
     RemTransition,
     NextTick,
     ServerProxy,
-    VideoJs
+    VideoJs,
+    AutoHeight,
+    JsCookie
   }
 };
 </script>
