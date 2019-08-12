@@ -1,118 +1,120 @@
 <template>
   <div>
     <pre>
+      <strong style="color: orange;"><a-icon type="info-circle" /> 只提供简单的提示，目前发现这个方法和定时器、延时器有些冲突，所以不推荐使用</strong>
+
       // 如果整体架构是iframe形式则需要将提示dom插入到父级页面的body中，否则不需要parent.document
 
       /* 自定义alert样式 */
       @keyframes notice {
-          0% {
-              top: 0
-          }
+        0% {
+          top: 0
+        }
 
-          25% {
-              top: 34px;
-          }
+        25% {
+          top: 34px;
+        }
 
-          75% {
-              top: 26px;
-          }
+        75% {
+          top: 26px;
+        }
 
-          100% {
-              top: 30px
-          }
+        100% {
+          top: 30px
+        }
       }
 
       @-moz-keyframes notice {
-          0% {
-              top: 0
-          }
+        0% {
+          top: 0
+        }
 
-          25% {
-              top: 34px;
-          }
+        25% {
+          top: 34px;
+        }
 
-          75% {
-              top: 26px;
-          }
+        75% {
+          top: 26px;
+        }
 
-          100% {
-              top: 30px
-          }
+        100% {
+          top: 30px
+        }
       }
 
       @-webkit-keyframes notice {
-          0% {
-              top: 0
-          }
+        0% {
+          top: 0
+        }
 
-          25% {
-              top: 34px;
-          }
+        25% {
+          top: 34px;
+        }
 
-          75% {
-              top: 26px;
-          }
+        75% {
+          top: 26px;
+        }
 
-          100% {
-              top: 30px
-          }
+        100% {
+          top: 30px
+        }
       }
 
       @-o-keyframes notice {
-          0% {
-              top: 0
-          }
+        0% {
+          top: 0
+        }
 
-          25% {
-              top: 34px;
-          }
+        25% {
+          top: 34px;
+        }
 
-          75% {
-              top: 26px;
-          }
+        75% {
+          top: 26px;
+        }
 
-          100% {
-              top: 30px
-          }
+        100% {
+          top: 30px
+        }
       }
 
       .ant-message-notice {
-          position: fixed;
-          z-index: 10010;
-          top: 30px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          align-items: flex-start;
-          width: fit-content;
-          max-width: 720px;
-          border: 1px solid rgba(0, 191, 193, 0.5);
-          padding: 12px 15px;
-          background: #edf2fc;
-          border-radius: 4px;
-          -webkit-box-shadow: 0 4px 12px rgba(0, 191, 193, 0.1);
-          box-shadow: 0 4px 12px rgba(0, 191, 193, 0.1);
-          user-select: none;
-          word-break: break-all;
-          animation: notice 0.2s linear;
-          -webkit-animation: notice 0.2s linear;
-          -moz-animation: notice 0.2s linear;
-          -o-animation: notice 0.2s linear;
+        position: fixed;
+        z-index: 10010;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: flex-start;
+        width: fit-content;
+        max-width: 720px;
+        border: 1px solid rgba(0, 191, 193, 0.5);
+        padding: 12px 15px;
+        background: #edf2fc;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 4px 12px rgba(0, 191, 193, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 191, 193, 0.1);
+        user-select: none;
+        word-break: break-all;
+        animation: notice 0.2s linear;
+        -webkit-animation: notice 0.2s linear;
+        -moz-animation: notice 0.2s linear;
+        -o-animation: notice 0.2s linear;
       }
 
       .ant-message-notice .icon.info {
-          margin: -1px 10px 0 0;
-          fill: #00bfc1;
+        margin: -1px 10px 0 0;
+        fill: #00bfc1;
       }
 
       .ant-message-notice .icon.close-alert {
-          fill: #888;
-          margin: 4px 0 0 10px;
-          cursor: pointer;
+        fill: #888;
+        margin: 4px 0 0 10px;
+        cursor: pointer;
       }
 
       .ant-message-notice .icon.close-alert:hover {
-          fill: #f00;
+        fill: #f00;
       }
 
       /* 自定义alert扩展 */
@@ -138,7 +140,7 @@
 </template>
 
 <script>
-export default {
-  name: "jqueryAlert"
-};
+  export default {
+    name: "jqueryAlert"
+  };
 </script>
