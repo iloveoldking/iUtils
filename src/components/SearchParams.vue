@@ -2,15 +2,10 @@
   <div>
     <pre>
       $.fn.extend({
-        searchParams: function (keyword) {
-          var paramsArray = location.search.slice(1).split('&');
-          var paramsObject = {};
-          paramsArray.forEach(function (item, index) {
-            var key = item.split('=')[0];
-            var value = item.split('=')[1] || null;
-            paramsObject[key] = value;
-          })
-          return paramsObject[keyword]
+        searchParams: function (name) {
+          var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+          var r = window.location.search.substr(1).match(reg);
+          return r == null ? null : unescape(r[2]);
         }
       });</pre>
   </div>
