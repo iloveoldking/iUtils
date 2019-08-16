@@ -6,7 +6,7 @@
       </a>
       <p slot="description">
         初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录
-        <em>29</em>项
+        <em>30</em>项
       </p>
     </a-alert>
     <a-collapse>
@@ -78,6 +78,9 @@
           </a-collapse-panel>
           <a-collapse-panel header="umi框架中路由拦截器">
             <umi-router-interceptor />
+          </a-collapse-panel>
+          <a-collapse-panel header="react native项目打包">
+            <react-native-build />
           </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
@@ -161,6 +164,7 @@ import ServerProxy from "@/components/ServerProxy";
 import VideoJs from "@/components/VideoJs";
 import AutoHeight from "@/components/AutoHeight";
 import JsCookie from "@/components/JsCookie";
+import ReactNativeBuild from "@/components/ReactNativeBuild";
 
 export default {
   name: "home",
@@ -193,7 +197,8 @@ export default {
     ServerProxy,
     VideoJs,
     AutoHeight,
-    JsCookie
+    JsCookie,
+    ReactNativeBuild
   }
 };
 </script>

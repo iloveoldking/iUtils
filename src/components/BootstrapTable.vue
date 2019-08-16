@@ -1,7 +1,7 @@
 <template>
   <div>
     <pre>
-      <a href="https://bootstrap-table.com/docs/api/table-options/" target="_blank">bootstrap-table文档</a>
+      <a href="https://bootstrap-table.com/docs/api/table-options/" target="_blank"><a-icon type="link" /> bootstrap-table文档</a>
 
       // 事件绑定
       window.operateEvents = {
