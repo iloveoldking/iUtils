@@ -6,7 +6,7 @@
       </a>
       <p slot="description">
         初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录
-        <em>30</em>项
+        <em>32</em>项
       </p>
     </a-alert>
     <a-collapse>
@@ -128,6 +128,12 @@
           <a-collapse-panel header="file标签获取文件以及base64格式数据">
             <file-read />
           </a-collapse-panel>
+          <a-collapse-panel header="生成随机UID">
+            <u-id />
+          </a-collapse-panel>
+          <a-collapse-panel header="rgb和16进制色值互转">
+            <color-transform />
+          </a-collapse-panel>
         </a-collapse>
       </a-collapse-panel>
     </a-collapse>
@@ -165,6 +171,8 @@ import VideoJs from "@/components/VideoJs";
 import AutoHeight from "@/components/AutoHeight";
 import JsCookie from "@/components/JsCookie";
 import ReactNativeBuild from "@/components/ReactNativeBuild";
+import UId from "@/components/UId";
+import ColorTransform from "@/components/ColorTransform";
 
 export default {
   name: "home",
@@ -198,7 +206,9 @@ export default {
     VideoJs,
     AutoHeight,
     JsCookie,
-    ReactNativeBuild
+    ReactNativeBuild,
+    UId,
+    ColorTransform
   }
 };
 </script>
