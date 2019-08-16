@@ -1,6 +1,8 @@
 <template>
   <div>
     <pre>
+      <a href="https://bootstrap-table.com/docs/api/table-options/" target="_blank">bootstrap-table文档</a>
+
       // 事件绑定
       window.operateEvents = {
         'click .edit-icon': function (e, value, row, index) {
