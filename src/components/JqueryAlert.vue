@@ -9,18 +9,22 @@
       @keyframes notice {
         0% {
           top: 0;
+          opacity: 0;
         }
 
         25% {
-          top: 34px;
+          top: 40px;
+          opacity: 0.4;
         }
 
         75% {
-          top: 26px;
+          top: 20px;
+          opacity: 0.8;
         }
 
         100% {
           top: 30px;
+          opacity: 1;
         }
       }
 

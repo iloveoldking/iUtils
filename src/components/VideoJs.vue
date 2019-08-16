@@ -30,10 +30,10 @@
         // 设置中文还需要引用一个附带语言包zh-CN.js
         language: 'zh-CN',
         sources: [{
-          src: 'http://.............mp4',
+          src: '//vjs.zencdn.net/v/oceans.mp4',
           type: 'video/mp4'
         }],
-        poster: 'http://.............jpg'
+        poster: '//vjs.zencdn.net/v/oceans.png'
       })</pre>
   </div>
 </template>

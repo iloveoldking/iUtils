@@ -6,13 +6,11 @@
       import {
         notification
       } from 'antd'
-    </pre>
-    <pre>
+      
       const iSFormDataType = setting.contentType === 'formData';
       const formDataContentType = 'application/x-www-form-urlencoded; charset=utf-8'
       const jsonContentType = 'application/json; charset=utf-8'
-    </pre>
-    <pre>
+      
       let instance = axios.create({
         baseURL: setting.baseUrl,
         timeout: 1000 * 10,
@@ -38,8 +36,7 @@
           }
         }]
       });
-    </pre>
-    <pre>
+      
       // 添加请求拦截器
       instance.interceptors.request.use(function (config) {
         // 对于请求统一增加token选项
@@ -52,8 +49,7 @@
           description: error.message
         });
       });
-    </pre>
-    <pre>
+      
       // 添加响应拦截器
       instance.interceptors.response.use(function (response) {
         // 对响应数据做点什么
@@ -65,8 +61,7 @@
           description: error.message
         });
       });
-    </pre>
-    <pre>
+      
       export default instance;</pre>
   </div>
 </template>
