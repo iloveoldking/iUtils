@@ -11,7 +11,7 @@
         b = ('0' + (Math.round(b) || 0).toString(16)).slice(-2)
         return '#' + r + g + b
       }
-      rgbToHex(100, 50, 0) ==》 "#ff7f00"
+      rgbToHex(100, 50, 0) => "#ff7f00"
 
       // 16进制色值生成RGB色值
       function hexToRgb(hex) {
@@ -19,7 +19,7 @@
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
         return 'rgb(' + parseInt(result[1], 16) + ',' + parseInt(result[2], 16) + ',' + parseInt(result[3], 16) + ')';
       }
-      hexToRgb('#00ff00') ==》 "rgb(0, 255, 0)"</pre>
+      hexToRgb('#00ff00') => "rgb(0, 255, 0)"</pre>
   </div>
 </template>
 
