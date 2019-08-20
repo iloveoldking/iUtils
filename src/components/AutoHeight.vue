@@ -1,7 +1,17 @@
 <template>
   <div>
     <pre>
-      父级元素设置padding-bottom：高/宽，子集元素则可以按照宽高比自适应
+      1.伪元素实现，伪元素设置padding-bottom：高/宽，指定元素则可以按照宽高比自适应
+      .auto-height {
+        width: 40%;
+      }
+      .auto-height::after {
+        content: '';
+        display: block;
+        padding-bottom: 56.25%;
+      }
+
+      2.父子元素实现，父级元素设置padding-bottom：高/宽，子集元素则可以按照宽高比自适应
       .parent {
         width: 360px;
         height: 0;
