@@ -43,6 +43,9 @@
         border-radius: 4px;
         box-shadow: 0 4px 12px rgba(0, 191, 193, 0.1);
         animation: notice 0.2s linear;
+        -webkit-animation: notice 0.2s linear;
+        -moz-animation: notice 0.2s linear;
+        -o-animation: notice 0.2s linear;
       }
 
       .ant-message-notice span.ant-message-content {
@@ -83,7 +86,7 @@
             '&lt;span class="ant-message-content"&gt;' + msg + '&lt;/span&gt;' +
             '&lt;svg t="1562119707312" class="icon close-alert" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3290" width="12" height="12"&gt;&lt;path d="M583.168 523.776L958.464 148.48c18.944-18.944 18.944-50.176 0-69.12l-2.048-2.048c-18.944-18.944-50.176-18.944-69.12 0L512 453.12 136.704 77.312c-18.944-18.944-50.176-18.944-69.12 0l-2.048 2.048c-19.456 18.944-19.456 50.176 0 69.12l375.296 375.296L65.536 899.072c-18.944 18.944-18.944 50.176 0 69.12l2.048 2.048c18.944 18.944 50.176 18.944 69.12 0L512 594.944 887.296 970.24c18.944 18.944 50.176 18.944 69.12 0l2.048-2.048c18.944-18.944 18.944-50.176 0-69.12L583.168 523.776z" p-id="3291"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;'
           )
-          $('.icon.close-alert').click(function () {
+          $('.icon.close-alert', parent.document).click(function () {
             $('.ant-message-notice', parent.document).remove()
             clearTimeout(window.jqueryAlertTimer)
           })
