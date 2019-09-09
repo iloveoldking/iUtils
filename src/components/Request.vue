@@ -19,7 +19,7 @@
           'Content-Type': iSFormDataType ? formDataContentType : jsonContentType
         },
         responseType: 'json',
-        transformRequest: [function (data) {
+        transformRequest: [data => {
           if (data) {
             // 对data进行任意转换处理
             if (iSFormDataType) {
@@ -38,11 +38,11 @@
       });
       
       // 添加请求拦截器
-      instance.interceptors.request.use(function (config) {
+      instance.interceptors.request.use(config => {
         // 对于请求统一增加token选项
         // config.headers.token = token;
         return config;
-      }, function (error) {
+      }, error => {
         // 对请求错误做些什么
         notification.error({
           message: '发送请求之前，请求错误',
@@ -51,10 +51,10 @@
       });
       
       // 添加响应拦截器
-      instance.interceptors.response.use(function (response) {
+      instance.interceptors.response.use(response => {
         // 对响应数据做点什么
         return response.data;
-      }, function (error) {
+      }, error => {
         // 对响应错误做点什么
         notification.error({
           message: '发送请求之后，响应错误',
