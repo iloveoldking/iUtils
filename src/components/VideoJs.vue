@@ -27,8 +27,12 @@
         autoplay: false,
         preload: 'auto',
         controls: true,
-        // 设置中文还需要引用一个附带语言包zh-CN.js
+        controlBar: {
+          pictureInPictureToggle: false
+        },
+        // 设置中文还需要引用一个附带语言包zh-CN.js，或者自己添加语言videojs.addLanguage("zh-CN", {})
         language: 'zh-CN',
+        aspectRatio: "16:9",
         sources: [{
           src: '//vjs.zencdn.net/v/oceans.mp4',
           type: 'video/mp4'
