@@ -39,9 +39,6 @@
           <a-collapse-panel header="form表单信息提取功能">
             <serialize-form />
           </a-collapse-panel>
-          <a-collapse-panel header="解析url字符串中参数的方法">
-            <search-params />
-          </a-collapse-panel>
           <a-collapse-panel header="基于jquery封装的简版alert提示组件">
             <jquery-alert />
           </a-collapse-panel>
@@ -109,6 +106,9 @@
         <a-collapse>
           <a-collapse-panel header="封装axios请求数据">
             <request-doc />
+          </a-collapse-panel>
+          <a-collapse-panel header="解析url字符串中参数的方法">
+            <search-params />
           </a-collapse-panel>
           <a-collapse-panel header="配置服务器代理解决跨域请求问题">
             <server-proxy />
