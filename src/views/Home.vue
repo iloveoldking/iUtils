@@ -6,7 +6,7 @@
       </a>
       <p slot="description">
         初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录
-        <em>32</em>项
+        <em>33</em>项
       </p>
     </a-alert>
     <a-collapse>
@@ -75,6 +75,9 @@
           </a-collapse-panel>
           <a-collapse-panel header="umi框架中路由拦截器">
             <umi-router-interceptor />
+          </a-collapse-panel>
+          <a-collapse-panel header="umi框架中models">
+            <umi-models />
           </a-collapse-panel>
           <a-collapse-panel header="react native项目打包">
             <react-native-build />
@@ -173,6 +176,7 @@ import JsCookie from "@/components/JsCookie";
 import ReactNativeBuild from "@/components/ReactNativeBuild";
 import UId from "@/components/UId";
 import ColorTransform from "@/components/ColorTransform";
+import UmiModels from "@/components/UmiModels";
 
 export default {
   name: "home",
@@ -208,7 +212,8 @@ export default {
     JsCookie,
     ReactNativeBuild,
     UId,
-    ColorTransform
+    ColorTransform,
+    UmiModels
   }
 };
 </script>
@@ -243,7 +248,7 @@ export default {
         color: #0c87df;
         margin: 0 4px;
         text-decoration: underline;
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
