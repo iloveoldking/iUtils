@@ -6,7 +6,7 @@
       </a>
       <p slot="description">
         初衷是为了收集使用较多或者封装较实用的代码块，包括前端流行框架以及node（主要是egg框架），已收录
-        <em>33</em>项
+        <em>34</em>项
       </p>
     </a-alert>
     <a-collapse>
@@ -70,6 +70,9 @@
       <!-- react -->
       <a-collapse-panel header="react相关">
         <a-collapse>
+          <a-collapse-panel header="react高阶组件HOC">
+            <react-hoc />
+          </a-collapse-panel>
           <a-collapse-panel header="umi框架中connect model">
             <umi-connect />
           </a-collapse-panel>
@@ -177,6 +180,7 @@ import ReactNativeBuild from "@/components/ReactNativeBuild";
 import UId from "@/components/UId";
 import ColorTransform from "@/components/ColorTransform";
 import UmiModels from "@/components/UmiModels";
+import ReactHoc from "@/components/ReactHoc";
 
 export default {
   name: "home",
@@ -213,7 +217,8 @@ export default {
     ReactNativeBuild,
     UId,
     ColorTransform,
-    UmiModels
+    UmiModels,
+    ReactHoc
   }
 };
 </script>
