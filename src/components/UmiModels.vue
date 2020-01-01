@@ -13,8 +13,14 @@
         }
       }
       // 开启immer之后，这里可以直接对state的值进行修改
-      changeAge(state, action) {
-        state.age = action.payload
+      <strong style="color: red;"><a-icon type="info-circle" /> 注意这里是有坑的，一定不要对state结构赋值，然后再对需要修改的数据进行修改，这样无法生效，一定要按state.xxx = xxx这种方案</strong>
+      <strong style="color: red;"><a-icon type="close-circle" /> 错误：</strong>
+      changeAge({ age }, { payload }) {
+        age = payload
+      }
+      <strong style="color: green;"><a-icon type="check-circle" /> 正确：</strong>
+      changeAge(state, { payload }) {
+        state.age = payload
       }
 
       /**
@@ -34,6 +40,7 @@
 
         reducers: {
           changeAge(state, action) {
+            // 一定不要对state进行结构赋值
             state.age = action.payload
           }
         },
