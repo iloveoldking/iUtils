@@ -9,9 +9,3 @@
         }</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "searchParams"
-};
-</script>

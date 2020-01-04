@@ -35,9 +35,3 @@
       Cookies.remove('name');</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "jsCookie"
-};
-</script>

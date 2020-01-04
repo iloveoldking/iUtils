@@ -26,9 +26,3 @@
       });</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "mongoosePopulate"
-};
-</script>

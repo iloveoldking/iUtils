@@ -41,9 +41,3 @@
       总结：高阶组件通过将组件传入函数中进行了一次操作，可以修改结构，或者向原组件添加若干属性和方法</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "umiConnect"
-};
-</script>

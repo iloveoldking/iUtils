@@ -15,9 +15,3 @@
       }</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "nextTick"
-};
-</script>

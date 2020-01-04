@@ -71,9 +71,3 @@
       </pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "vueCkeditor"
-};
-</script>

@@ -24,9 +24,3 @@
       fetch('/api/user/create').then()</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "serverProxy"
-};
-</script>

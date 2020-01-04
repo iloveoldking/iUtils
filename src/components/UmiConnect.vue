@@ -25,9 +25,3 @@
       }</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "umiConnect"
-};
-</script>

@@ -23,9 +23,3 @@
       });</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "serializeForm"
-};
-</script>

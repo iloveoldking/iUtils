@@ -123,9 +123,3 @@
       module.exports = UserService;</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "eggMongo"
-};
-</script>

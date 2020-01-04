@@ -65,9 +65,3 @@
       export default instance;</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "request"
-};
-</script>

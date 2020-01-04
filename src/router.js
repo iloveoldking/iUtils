@@ -1,16 +1,15 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  mode: 'hash',
-  base: process.env.BASE_URL,
+  mode: "hash",
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: () => import('./views/Home.vue')
+      path: "/",
+      name: "home",
+      component: () => import("./views/Home.vue")
     }
   ]
-})
+});

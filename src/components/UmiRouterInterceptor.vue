@@ -33,9 +33,3 @@
       export default Authorized;</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "umiRouterInterceptor"
-};
-</script>

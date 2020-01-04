@@ -20,9 +20,3 @@
       邮编：/[1-9]\d{5}(?!\d)/</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "regularExpression"
-};
-</script>

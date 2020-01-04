@@ -53,9 +53,3 @@
       })</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "jqueryAjax"
-};
-</script>

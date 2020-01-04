@@ -1,7 +1,11 @@
 <template>
   <div class="home-wrapper">
     <a-alert type="info" class="banner-tip">
-      <a slot="message" href="https://github.com/iloveoldking/iUtils" target="_blank">
+      <a
+        slot="message"
+        href="https://github.com/iloveoldking/iUtils"
+        target="_blank"
+      >
         <a-icon type="github" />iUtils
       </a>
       <p slot="description">
@@ -224,54 +228,5 @@ export default {
 </script>
 
 <style lang="less">
-.home-wrapper {
-  padding: 10px 30px;
-
-  .banner-tip {
-    margin-bottom: 10px;
-
-    .ant-alert-message {
-      margin-bottom: 10px;
-
-      a {
-        color: rgba(0, 0, 0, 0.65);
-
-        &:hover {
-          color: #108ee9;
-        }
-
-        .anticon {
-          margin-right: 5px;
-        }
-      }
-    }
-
-    p {
-      margin: 0;
-
-      em {
-        color: #0c87df;
-        margin: 0 4px;
-        text-decoration: underline;
-        font-size: 18px;
-      }
-    }
-  }
-
-  .ant-collapse {
-    .ant-collapse-header {
-      color: #008eff;
-    }
-
-    .ant-collapse-content-box {
-      background: #f7f7f7;
-
-      pre {
-        margin: 0;
-        font-weight: 200;
-        font-family: Consolas, MicrosoftYaHei;
-      }
-    }
-  }
-}
+@import "./style.less";
 </style>

@@ -47,9 +47,3 @@
       7.android\app\src\main\AndroidManifest.xml以及同级目录下的res文件夹可以用来配置app打包之后的名字（在res\values\strings.xml中）和图标（包括方形弧角图标和圆形图标）等</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "reactNativeBuild"
-};
-</script>

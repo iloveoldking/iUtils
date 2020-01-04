@@ -22,9 +22,3 @@
       hexToRgb('#00ff00') => "rgb(0, 255, 0)"</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "colorTransform"
-};
-</script>

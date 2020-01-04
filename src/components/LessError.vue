@@ -13,9 +13,3 @@
       }</pre>
   </div>
 </template>
-
-<script>
-export default {
-  name: "lessError"
-};
-</script>
